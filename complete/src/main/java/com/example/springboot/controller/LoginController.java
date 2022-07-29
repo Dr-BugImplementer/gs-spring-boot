@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/loginData")
 public class LoginController {
 
     private LoginRepository loginRepository;
@@ -17,7 +17,7 @@ public class LoginController {
         this.loginRepository = loginRepository;
     }
 
-    @GetMapping("")
+    @GetMapping()
     public List<Login> index() {
         List<Login> all = loginRepository.findAll();
         return all;}
@@ -31,12 +31,12 @@ public class LoginController {
         return loginRepository.findById(Integer.valueOf(id));
     }
 
-    @PostMapping("")
+    @PostMapping()
     public Login addLogin(@RequestBody Login newLogin) {
         return loginRepository.save(newLogin);
     }
 
-    @PutMapping("")
+    @PutMapping()
     Login replaceLogin(@RequestBody Login newLogin){
         return loginRepository.save(newLogin);
     }

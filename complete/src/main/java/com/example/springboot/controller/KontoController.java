@@ -16,7 +16,7 @@ public class KontoController {
         this.kontoRepository = kontoRepository;
     }
 
-    @GetMapping("")                                                                //Definieren wie die Methode nach Außen abrufbar ist
+    @GetMapping()                                                                //Definieren wie die Methode nach Außen abrufbar ist
     public List<Konto> findAll() {
         List<Konto> all = kontoRepository.findAll();
         return all;
@@ -27,7 +27,7 @@ public class KontoController {
         return kontoRepository.findeKonto(kontoId,loginId);
     }
 
-    @PostMapping("")
+    @PostMapping()
     public Konto addKonto(@RequestBody Konto newKonto) {
         return kontoRepository.save(newKonto);
     }

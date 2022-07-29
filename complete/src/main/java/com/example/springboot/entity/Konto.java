@@ -29,7 +29,7 @@ public class Konto {
     private String hnr_zusatz;
     @Basic
     @Column(name="postleitzahl")
-    private int postleitzahl;
+    private String postleitzahl;
     @Basic
     @Column(name="ort")
     private String ort;
@@ -80,11 +80,11 @@ public class Konto {
         this.hnr_zusatz = hnr_zusatz;
     }
 
-    public int getPostleitzahl() {
+    public String getPostleitzahl() {
         return postleitzahl;
     }
 
-    public void setPostleitzahl(int postleitzahl) {
+    public void setPostleitzahl(String postleitzahl) {
         this.postleitzahl = postleitzahl;
     }
 
