@@ -1,0 +1,5 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "appService.defaultWebAppToDeploy": "/subscriptions/9583e911-4acb-40a5-a801-b43662f387b6/microsoft.web/sites/subscriptions/9583e911-4acb-40a5-a801-b43662f387b6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/OX-Kasino-API",
+    "appService.deploySubpath": "complete\\target\\spring-boot-complete-0.0.1-SNAPSHOT.jar"
+}
