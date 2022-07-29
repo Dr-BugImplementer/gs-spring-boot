@@ -13,7 +13,7 @@ import java.util.Arrays;
 @Configuration
 public class SecurityConfiguration   {
     
-    @Value("{app.cors.allowed-origins}")
+    @Value("${app.cors.allowed-origins}")
     private List<String> corsAllowedOrigins;
 
     @Bean
